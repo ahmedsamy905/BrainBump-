@@ -3,13 +3,12 @@ package com.project.BrainBump.models;
 
 import com.fasterxml.jackson.annotation.JsonIgnore;
 import jakarta.persistence.*;
-//import jakarta.validation.constraints.Min;
+import jakarta.validation.constraints.Min;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
 import java.time.LocalDate;
-import java.util.Date;
 
 @Entity
 @Data
@@ -24,7 +23,7 @@ public class ProblemAttempt {
 
     @Enumerated(EnumType.STRING)
     private SolveStatus solveStatus;
-//    @Min(0)
+    @Min(0)
     private int timeTaken;
 
     @JsonIgnore

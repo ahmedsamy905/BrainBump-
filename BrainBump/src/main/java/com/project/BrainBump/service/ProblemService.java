@@ -10,13 +10,15 @@ public interface ProblemService {
 
     Problem addProblem(Long memberId, Problem problem);
 
-    String deleteProblem(Long memberId, Long problemId);
+    Problem deleteProblem(Long memberId, Long problemId);
 
     Problem getProblemById(Long problemId);
 
     Problem updateProblem(Long problemId, Problem problem);
 
-    List<Problem> getReminders(Long memberId);
+    List<Problem> getReminders(Long userProfileId);
 
     ProblemAttempt addAttempt(Long problemId, ProblemAttempt problemAttempt);
+
+    List<Problem> getProblemByTag(Long memberId, String tag);
 }
