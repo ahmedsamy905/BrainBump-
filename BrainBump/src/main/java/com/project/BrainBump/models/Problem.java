@@ -7,7 +7,6 @@ import jakarta.validation.constraints.Min;
 import lombok.*;
 
 import java.time.LocalDate;
-
 import java.util.List;
 
 @Entity
