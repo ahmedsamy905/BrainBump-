@@ -29,7 +29,7 @@
 - **Backend:**
   - Java, Spring Boot
   - Hibernate/JPA for ORM
-  - MySQL/PostgreSQL for database management
+  - PostgreSQL for database management
 - **Email Integration:**
   - Spring Mail for email notifications
 - **Scheduling:**
